@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#228B22	"
+    android:background="#000000"
     tools:context="oliver.com.competitiontt.MainActivity">
 
     <Button
@@ -62,7 +62,7 @@
         android:layout_marginTop="9dp"
         android:text="立即登入"
         android:textSize="24sp"
-        android:background="#FF8033"
+        android:background="#000000"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
