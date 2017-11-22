@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".searchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpDataActivity" />
+        <activity android:name=".RegActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CustomDialogActivity"></activity>
     </application>
 
 </manifest>
