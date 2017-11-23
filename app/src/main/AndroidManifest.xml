@@ -9,24 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity
 
-                <category android:name="android.intent.category.LAUNCHER" />
+            android:name=".MainActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action  android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:name=".searchActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".UpDataActivity" />
         <activity android:name=".RegActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".CustomDialogActivity"></activity>
+
+        <activity android:name=".CustomDialogActivity"
+
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Dialog">
+
+
+
+        </activity>
     </application>
 
 </manifest>

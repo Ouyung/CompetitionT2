@@ -1,9 +1,10 @@
 package oliver.com.competitiontt;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class RegActivity extends AppCompatActivity {
+public class RegActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
