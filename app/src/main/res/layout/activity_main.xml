@@ -54,17 +54,14 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="308dp"
+        android:layout_width="304dp"
         android:layout_height="62dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
         android:onClick="onClick"
         android:text="立即登入"
         android:textSize="24sp"
-        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
 </android.support.constraint.ConstraintLayout>
