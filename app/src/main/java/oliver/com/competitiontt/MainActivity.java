@@ -13,7 +13,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btn_login;
+    private Button btn_login,btn_search;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,18 +21,29 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn_login = (Button)findViewById(R.id.login);
+        btn_search = (Button)findViewById(R.id.search);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(MainActivity.this,CustomDialogActivity.class);
+                Intent it = new Intent(MainActivity.this, CustomDialogActivity.class);
                 startActivity(it);
+
+
+                btn_search.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent it = new Intent(MainActivity.this, searchActivity.class);
+                        startActivity(it);
+                    }
+                });
             }
-        });
-    }
+
+
+});
+
 
 }
-
-
+}
 
 
