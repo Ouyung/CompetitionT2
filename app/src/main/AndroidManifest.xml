@@ -10,31 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-
             android:name=".MainActivity"
             android:launchMode="singleInstance">
             <intent-filter>
-                <action  android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".searchActivity">
-
-        </activity>
+        <activity android:name=".searchActivity"></activity>
         <activity android:name=".UpDataActivity" />
         <activity android:name=".RegActivity" />
-
-        <activity android:name=".CustomDialogActivity"
-
+        <activity
+            android:name=".CustomDialogActivity"
+            android:excludeFromRecents="true"
             android:noHistory="true"
             android:taskAffinity=""
-            android:excludeFromRecents="true"
-            android:theme="@android:style/Theme.Dialog">
-
-
-
-        </activity>
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".talkActivity"></activity>
     </application>
 
 </manifest>
