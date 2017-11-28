@@ -51,7 +51,7 @@ public class CustomDialogActivity extends Activity {
                 Toast.makeText(CustomDialogActivity.this,"you click close!",Toast.LENGTH_SHORT).show();
                 finish();
             }
-        });
+        }); 
     }
 
 
