@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:label="想乒"
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,16 +19,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".searchActivity"></activity>
-        <activity android:name=".UpDataActivity" />
-        <activity android:name=".RegActivity" />
+        <activity
+            android:name=".searchActivity"
+            android:label="賽事查詢" />
+        <activity
+            android:name=".UpDataActivity"
+            android:label="刊登比賽" />
+        <activity
+            android:name=".RegActivity"
+            android:label="註冊帳號" />
         <activity
             android:name=".CustomDialogActivity"
             android:excludeFromRecents="true"
             android:noHistory="true"
             android:taskAffinity=""
-            android:theme="@android:style/Theme.Dialog"></activity>
-        <activity android:name=".talkActivity"></activity>
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".talkActivity"
+            android:label="聊天室" />
+        <activity android:name=".UserHomePage"></activity>
     </application>
 
 </manifest>

@@ -114,7 +114,7 @@
                     android:layout_weight="0.49"
                     android:ems="10"
                     android:hint="password"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPassword" />
 
             </LinearLayout>
 
