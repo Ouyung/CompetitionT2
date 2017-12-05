@@ -27,7 +27,9 @@
             android:label="刊登比賽" />
         <activity
             android:name=".RegActivity"
-            android:label="註冊帳號" />
+            android:label="註冊帳號"
+
+            />
         <activity
             android:name=".CustomDialogActivity"
             android:excludeFromRecents="true"
