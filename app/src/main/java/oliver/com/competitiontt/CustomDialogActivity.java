@@ -31,6 +31,8 @@ public class CustomDialogActivity extends Activity {
     EditText username,password;
     String USERNAME,PASSWORD;
 
+
+
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
@@ -43,6 +45,8 @@ public class CustomDialogActivity extends Activity {
         setContentView(R.layout.activity_custom_dialog);
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
+
+
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
@@ -57,36 +61,18 @@ public class CustomDialogActivity extends Activity {
             }
         };
 
-
-
         findView();
         setListeners();
 
-
     }
 
-
-//        btn_cancel.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(CustomDialogActivity.this, "you click cancel!", Toast.LENGTH_SHORT).show();
-//                finish();
-//            }
-//        }
-//        text_close.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(CustomDialogActivity.this, "you click close!", Toast.LENGTH_SHORT).show();
-//                finish();
-//            }
-//        }
 
     void findView(){
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
         btn_confirm = (Button) findViewById(R.id.btn_confirm);
         btn_cancel = (Button) findViewById(R.id.btn_cancel);
-        text_close = (TextView) findViewById(R.id.text_close);
+//        text_close = (TextView) findViewById(R.id.text_close);
         text_title = (TextView) findViewById(R.id.text_title);
         text_content = (TextView) findViewById(R.id.text_content);
 
@@ -103,6 +89,22 @@ public class CustomDialogActivity extends Activity {
                 signIn(inputUserName, inputPassword);
             }
         });
+        btn_cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(CustomDialogActivity.this, "you click cancel!", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
+
+//        text_close.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(CustomDialogActivity.this, "you click close!", Toast.LENGTH_SHORT).show();
+//                finish();
+//            }
+//        });
+
     }
     private void signIn(String email, String password) {
 
@@ -118,6 +120,8 @@ public class CustomDialogActivity extends Activity {
                             Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
                             Toast.makeText(CustomDialogActivity.this, "登入成功",
                                     Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(CustomDialogActivity.this, MainActivity.class);
+                            startActivity(intent);
                         }
 
                         // ...

@@ -100,6 +100,8 @@ public class RegActivity extends AppCompatActivity {
                         }else{
                             Toast.makeText(RegActivity.this, "註冊成功",
                                     Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(RegActivity.this, CustomDialogActivity.class);
+                            startActivity(intent);
 
                         }
 
