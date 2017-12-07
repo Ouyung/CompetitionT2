@@ -7,7 +7,7 @@
     tools:context="oliver.com.competitiontt.searchActivity">
 
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="453dp" />
 </LinearLayout>
